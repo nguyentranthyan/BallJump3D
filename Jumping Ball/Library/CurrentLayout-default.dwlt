@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 685
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Console
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 434, y: 271}
   m_MaxSize: {x: 14004, y: 10021}
   vertical: 0
-  controlID: 94
+  controlID: 87
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 434, y: 392}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 93
+  controlID: 44
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 392}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 56
+  controlID: 124
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -341,8 +341,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
-  m_AssetGUID: 
-  m_InstanceID: 0
+  m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
@@ -378,7 +377,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1024, y: 768}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -393,10 +392,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -384
-    m_VBaseRangeMax: 384
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -413,23 +412,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 655
-      height: 593
-    m_Scale: {x: 0.63964844, y: 0.63964844}
-    m_Translation: {x: 327.5, y: 296.5}
+      height: 614
+    m_Scale: {x: 0.34114584, y: 0.34114584}
+    m_Translation: {x: 327.5, y: 307}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -512
-      y: -463.5359
-      width: 1024
-      height: 927.0718
+      x: -960
+      y: -899.9084
+      width: 1920
+      height: 1799.8168
     m_MinimalGUI: 1
-  m_defaultScale: 0.63964844
+  m_defaultScale: 0.34114584
   m_LastWindowPixelSize: {x: 655, y: 614}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -467,7 +466,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1838f5ff3638f5ffce38f5ffd2adf8ffdc37f9ffa88afafff004fbffa874fbffac16fcffde34fdffd898fdff3a14fefff854feff4c78ffff6678ffff0279ffff4efbfffffc370000063800001e38000084380000bc380000fc4f000006500000145000004e5000009a50000078790000
+      m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -540,8 +539,8 @@ MonoBehaviour:
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
   m_SceneViewState:
+    m_AlwaysRefresh: 0
     showFog: 0
-    showMaterialUpdate: 0
     showSkybox: 0
     showFlares: 0
     showImageEffects: 0
@@ -579,7 +578,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.008984686, y: -0.05816981, z: -0.000526076, w: 0.99827296}
     speed: 2
-    m_Value: {x: -0.008984624, y: -0.058169413, z: -0.00052607246, w: 0.99826616}
+    m_Value: {x: 0.008984686, y: 0.058169812, z: 0.000526076, w: -0.99827296}
   m_Size:
     m_Target: 1457.7247
     speed: 2
@@ -766,21 +765,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
     m_Globs: []
+    m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\NewBackup\Jumping Ball
+  m_LastProjectPath: D:\NewBackup\JumpBall3D\BallJump3D\Jumping Ball
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84390000
-    m_LastClickedID: 14724
-    m_ExpandedIDs: 00000000743900008039000000ca9a3b
+    m_SelectedIDs: bc3c0000
+    m_LastClickedID: 15548
+    m_ExpandedIDs: 00000000bc3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -808,7 +808,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000074390000
+    m_ExpandedIDs: 00000000bc3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -835,22 +835,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000484b0000f84a0000aa4b00001c4b0000184b0000d04c0000184d00000c4d00009e4b00007e4b0000944b0000444b0000da4a0000104b0000c24a0000724b0000e64a0000984c0000e24c0000d64c0000084b0000464b0000dc4a0000064b0000b84a0000684b0000d84a00008e4c0000d84c0000cc4c0000404b0000fe4a00005c4b00003c4b0000be4c0000144d00004a4b0000084d0000a04c0000c64c0000f44c0000524b0000024b00008a3e0000ee450000f2450000f6450000644600006846000084460000884600008c460000904600009446000098460000d6e6feff6439feff54460000584600005c4600006046000084530000144b0000c64a0000764b0000ea4a0000e44c00009c4c00004e4b00000c4b00006a4b0000604b000012430000585100002a5600007a6500006065000064650000044c0000124c0000504c00008c4c0000624c0000264c00000e4c0000404c00006c4c0000804c0000304c0000403e0000864b00008a4b0000c05a0000c45a0000c85a0000cc5a0000d25a0000d65a0000dc5a0000e05a0000e45a0000e85a0000ec5a0000f05a0000ac5a0000b05a0000685a00006c5a0000705a0000745a0000785a00007c5a0000805a0000865a00008a5a00008e5a0000925a0000965a0000545a0000585a00005c5a0000605a0000da4200001a3e00003444000032450000364e000042450000c04b0000864200008a420000b43e000014410000b03e000062570000744b00002a46000002450000a8450000de470000225800000e580000ce5800001859000070580000205900004a5900000c590000985800003a5900000a5800004c5800003e58000048580000b0580000ee5800002459000016580000d6580000c0410000a6410000125d0000f8640000a4450000fac80000e25e0100766e01003c4100002a5a0000d4440000d8440000dc440000d0440000cc440000c8440000c4440000c04400007c400000f26e000086410000ac41000034420000a8410000a4410000b0410000b4410000b84100007e42000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ObstacleHolder 1
-      m_OriginalName: ObstacleHolder 1
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14544
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 3}
     m_CreateAssetUtility:

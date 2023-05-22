@@ -13,13 +13,24 @@ public class GameController : MonoBehaviour
 	bool start = false;
 	[SerializeField]
 	private GameObject startButton;
-	bool pause = false;
+	public bool pause = false;
 	[SerializeField]
 	private GameObject pauseUi;
 
 	[SerializeField]
-	private Text scoreText, endScoreText, bestScoreText;
-	public int Score = 0;
+	private Text scoreText, endScoreText, bestScoreText2, bestScoreText;
+	private int score;
+	public int Score {
+		get
+		{
+			return score;
+		}
+		set
+		{
+			score = value;
+			SetScore(value);
+		}
+	}
 
 	[SerializeField]
 	private GameObject gameOverPanel;
@@ -27,15 +38,24 @@ public class GameController : MonoBehaviour
 	private void Awake()
 	{
 		Time.timeScale = 0;
-		_makeInstance();
-	}
 
-	void _makeInstance()
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+	private void Start()
 	{
-		if (instance == null)
+        bestScoreText2.text = "High Score: " + GameManager.instance.GetHighScore().ToString();
+    }
+
+	private void Update()
+	{
+		if (!pause)
 		{
-			instance = this;
-		}
+			Score++;
+        }
 	}
 
 	public void StartGame()
@@ -44,6 +64,7 @@ public class GameController : MonoBehaviour
 		startButton.SetActive(false);
 		Time.timeScale = 1;
 		start = true;
+		pause = false;
 	}
 	
 	public void Pause()
@@ -70,28 +91,35 @@ public class GameController : MonoBehaviour
 	public void Restart()
 	{
 		Time.timeScale = 0;
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 	public void Quit()
 	{
 		Application.Quit();
 	}
 
-	public void _setScore(int score)
+	public void SetScore(int score)
 	{
 		scoreText.text = "Score: " + score;
 	}
 
-	public void _GameOverShowPanel(int score)
+	public void GameOverShowPanel()
 	{
-		scoreText.gameObject.SetActive(false);
-		gameOverPanel.SetActive(true);
-		endScoreText.text = "" + score;
-		if (score > GameManager.instance.GetHighScore())
-		{
-			GameManager.instance.SetHighScore(score);
-		}
-
-		bestScoreText.text="" + GameManager.instance.GetHighScore();
+		StartCoroutine(EndGame());	
 	}
+
+	IEnumerator EndGame()
+	{
+		yield return new WaitForSeconds(1);
+
+        scoreText.gameObject.SetActive(false);
+        gameOverPanel.SetActive(true);
+        endScoreText.text = "" + Score;
+        if (score > GameManager.instance.GetHighScore())
+        {
+            GameManager.instance.SetHighScore(Score);
+        }
+
+        bestScoreText.text = GameManager.instance.GetHighScore().ToString();
+    }
 }

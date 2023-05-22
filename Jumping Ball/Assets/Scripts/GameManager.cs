@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
 	private void Awake()
 	{
-		_MakeSingleInstance();
+		MakeSingleInstance();
 		IsGameStartedForTheFirstTime();
 	}
 	//check đã tải app lần đầu
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 	//đồng bộ giữa các scence
-	void _MakeSingleInstance()
+	void MakeSingleInstance()
 	{
 		if (instance != null)
 		{
